@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.prokopovich.starter.IronConfiguration
+
+org.springframework.context.ApplicationContextInitializer=com.prokopovich.starter.ProfileCheckApplicationContextInitializer
+
+org.springframework.boot.env.EnvironmentPostProcessor=com.prokopovich.starter.ProfileDetectorEPP
