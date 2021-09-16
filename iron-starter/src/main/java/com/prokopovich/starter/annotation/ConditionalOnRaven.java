@@ -6,6 +6,6 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Conditional(OnRavenConditional.class)
+@Conditional({OnRavenConditional.class})
 public @interface ConditionalOnRaven {
 }

@@ -9,7 +9,9 @@ public class ProfileDetectorEPP implements EnvironmentPostProcessor {
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
 
-        if (environment.getActiveProfiles().length == 0 && getTemperature() < 272) {
+        environment.setActiveProfiles("ProfileConstants.ЗИМА_ТУТА");
+
+        if (environment.getActiveProfiles().length == 0 && getTemperature() < -272) {
             environment.setActiveProfiles("ProfileConstants.ЗИМА_ТУТА");
         } else {
             environment.setActiveProfiles("ProfileConstants.ЗИМА_БЛИЗКО");
