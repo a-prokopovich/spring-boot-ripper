@@ -10,7 +10,6 @@ public class OnProductionCondition implements Condition {
 
     @Override
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
-        boolean k = JOptionPane.showConfirmDialog(null, "Это продакшн?") == 0;
-        return k;
+        return JOptionPane.showConfirmDialog(null, "Это продакшн?") == 0;
     }
 }

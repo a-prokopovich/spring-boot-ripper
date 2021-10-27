@@ -1,10 +1,12 @@
 package com.prokopovich.ironbank;
 
-import org.springframework.boot.SpringApplication;
+import com.prokopovich.ironbank.service.ProphetService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
+@EnableConfigurationProperties(ProphetService.class)
 public class SpringBootRipperApplication {
 
     public static void main(String[] args) {

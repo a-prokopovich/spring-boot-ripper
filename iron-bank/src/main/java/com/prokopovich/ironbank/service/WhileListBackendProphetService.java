@@ -1,6 +1,6 @@
 package com.prokopovich.ironbank.service;
 
-import com.prokopovich.starter.ProphetProperties;
+import com.prokopovich.starter.config.ProphetProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

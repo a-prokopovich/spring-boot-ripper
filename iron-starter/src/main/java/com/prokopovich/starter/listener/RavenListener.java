@@ -1,5 +1,6 @@
-package com.prokopovich.starter;
+package com.prokopovich.starter.listener;
 
+import com.prokopovich.starter.property.RavenProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

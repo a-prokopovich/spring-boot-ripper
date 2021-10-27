@@ -1,4 +1,4 @@
-package com.prokopovich.starter;
+package com.prokopovich.starter.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

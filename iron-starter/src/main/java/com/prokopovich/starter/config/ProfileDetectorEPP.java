@@ -1,4 +1,4 @@
-package com.prokopovich.starter;
+package com.prokopovich.starter.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
@@ -9,9 +9,7 @@ public class ProfileDetectorEPP implements EnvironmentPostProcessor {
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
 
-        environment.setActiveProfiles("ProfileConstants.ЗИМА_ТУТА");
-
-        if (environment.getActiveProfiles().length == 0 && getTemperature() < -272) {
+        if (environment.getActiveProfiles().length == 0 && getTemperature() > -272) {
             environment.setActiveProfiles("ProfileConstants.ЗИМА_ТУТА");
         } else {
             environment.setActiveProfiles("ProfileConstants.ЗИМА_БЛИЗКО");

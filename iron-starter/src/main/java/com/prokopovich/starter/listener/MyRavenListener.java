@@ -1,7 +1,6 @@
-package com.prokopovich.ironbank;
+package com.prokopovich.starter.listener;
 
-import com.prokopovich.starter.RavenListener;
-import com.prokopovich.starter.RavenProperties;
+import com.prokopovich.starter.property.RavenProperties;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
